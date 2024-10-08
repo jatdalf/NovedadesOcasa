@@ -44,7 +44,7 @@
     gap: 15px;
   }
   
-  .primaryButton {
+  .primaryButton, .secondaryButton {
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
@@ -52,8 +52,7 @@
     font-size: 1rem;
     background-color: #1e7c6d;
     color: white;
-    font-weight: 700;     
-    width: 15vw;
+    font-weight: 700;         
   }
   
   .primaryButton:hover {

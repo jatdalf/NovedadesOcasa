@@ -1,49 +1,39 @@
-.LandingContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    padding: 20px;
-    background-color: #f0f0f0;
-    text-align: center;
-  }
-  
-  .content {
-    max-width: 600px;
-    margin-top: -5%;
-    width: 100%;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  }
-  
+.LandingContainer {
+  display: flex;  
+  align-items: center;
+  justify-content: center; /* Centrar horizontalmente */
+  height: 100vh;
+  padding: 20px;
+  background-color: #f0f0f0;
+  text-align: center;
+}
+
+.content {     
+  max-width: 600px; 
+  margin-top: -5%;
+  width: 100%;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
   .landingImage {
     width: 10vw;
     max-width: 10vw;
     height: auto;
     margin-bottom: 20px; 
-  }
-  
-  h1 {
+  }  
+  .IngresosH1 {
     font-size: 2rem;
     margin-bottom: 20px;
     color: #333;
     margin-top: -2%;
   }
-  
-  p {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
-    color: #666;
-  }
-  
   .buttons {
     display: flex;
     justify-content: center;
     gap: 15px;
-  }
-  
+  }  
   .primaryButton, .secondaryButton {
     padding: 10px 20px;
     border: none;
@@ -53,16 +43,39 @@
     background-color: #1e7c6d;
     color: white;
     font-weight: 700;         
-  }
-  
+  }  
   .primaryButton:hover {
     background-color: #06c6d4;
     color: rgb(255, 255, 255);
     font-weight: 700;
   }
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
   .legendContainer{
     margin-bottom: 2%;
   }
+.IngresosInput[type="radio"] {
+    display: none;
+}
+
+
+
+label {  
+    background: white;
+    border: 2px solid rgb(97, 146, 121);
+    border-radius: 20px;
+    padding: 0.57em;
+    margin-bottom: 0.1rem;
+    margin: 0.8rem;   
+    box-shadow: 0px 3px 10px -2px hsla(150, 5%, 65%, 0.5);
+    position: relative;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
   
   @media (max-width: 768px) {
     h1 {
@@ -77,7 +90,7 @@
       max-width: 200px;
     }
     .content{
-        margin-top: -10%;
+        margin-top: 20%;
     }
     .primaryButton, .secondary-button {
         width: 25vw;
@@ -87,20 +100,15 @@
   @media (max-width: 480px) {
     h1 {
       font-size: 1.2rem;
-    }
-  
-    p {
-      font-size: 0.9rem;
-    }
-  
+    }   
     .buttons {
       flex-direction: column;
     }
   
     .primaryButton, .secondary-button {
-        width: 25vw;
+        width: 30vw;
     }
     .content{
-        margin-top: -10%;
+        margin-top: 10%;
     }
   }

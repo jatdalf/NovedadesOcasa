@@ -6,6 +6,7 @@ import Error404 from './Component/Error404/Error404'
 import Ingresos from './Views/Ingresos/Ingresos';
 import Control from './Views/Control/Control';
 import Presentismo from './Views/Presentismo/Presentismo';
+import TestPage from "./Component/Test/Test"
 
 function App() {
   return (
@@ -17,6 +18,9 @@ function App() {
         <Route path="/Ingresos" element={<Ingresos />}></Route>    
         <Route path="/Presentismo" element={<Presentismo />}></Route>    
         <Route path="/Control" element={<Control />}></Route>    
+        <Route path="/TestPage" element={<TestPage />}></Route>    
+      
+      
       </Routes>
     </Router>
   );

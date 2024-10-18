@@ -9,10 +9,10 @@ const Presentismo = ()=>{
           <img src={Logo} className={styles.landingImage} alt="Logo Ocasa" />
           <h1>Registro de asistencia</h1>
           <fieldset className={styles.legendContainer}>
-            <legend>Turnos</legend>
+            <legend>En desarrollo</legend>
           </fieldset>
           <div className={styles.buttons}>
-            <Link to="/Ingresos">
+            <Link to="/Home">
               <button className={styles.primaryButton}>Aceptar</button>
             </Link>                                   
           </div>

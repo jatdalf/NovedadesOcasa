@@ -15,7 +15,7 @@ const Home = ()=>{
                 <Link to="/Presentismo">
                   <button className={styles.primaryButton}>Presentismo</button>
                 </Link>
-                <Link to="/Control">
+                <Link to="/TestPage">
                   <button className={styles.primaryButton}>Control de Stock</button>
                 </Link>              
             </div>
